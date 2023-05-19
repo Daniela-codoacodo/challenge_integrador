@@ -4,29 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="C:\Users\HP\Desktop\CURSO JAVA SCRIPT\PROYECTO FINAL\Challenge Integrador\style.css">
+    <link rel="stylesheet" href="../../css/index.css">
     <title>Shop | Funkoshop</title>
 </head>
 <body>
     <header>
-        <nav>
-            <picture>
-                <a href="./index.html">
-                    <img class="isologotipo" src="file:///C:/Users/HP/Desktop./CURSO%20JAVA%20SCRIPT/PROYECTO%20FINAL/Challenge%20Integrador/img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="../../index.html">
+                    <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
                 </a>
             </picture>
-            <ul>
-                <li>
-                    <a href="./pages/shop.html">SHOP</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="./shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="./pages/contact.html">CONTACTO</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
                 </li>
-                <li>
-                    <a href="./pages/login.html">LOGING</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">LOGING</a>
                 </li>
-                <li>
-                    <a href="./pages/cart.html">
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="./pages/cart.html">
                         <img src="file:///C:/Users/HP/Desktop/CURSO%20JAVA%20SCRIPT/PROYECTO%20FINAL/Challenge%20Integrador/img/icons/cart-icon.svg" alt="ícono de carrito">
                     </a>
                 </li>
@@ -212,6 +223,6 @@
            </section>
             <p class="derechos">All rights reserved 2022 - Funkoshop &copy.</p>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </body>
 </html>
